@@ -1,0 +1,59 @@
+---
+import { Image } from 'astro:assets';
+
+import headerImage from "./img/header.png"
+---
+
+<header>
+  <div class="header-contacts">
+    <span class="header-contacts__item">
+      <svg>
+        <use xlink:href="/sprites/main-sprite.svg#iconPin"></use>
+      </svg>
+      Berbstr. 1, Cologne, Germany
+    </span>
+    <a href="mailto:berb@gmail.com" class="link header-contacts__item">
+      <svg>
+        <use xlink:href="/sprites/main-sprite.svg#iconMail"></use>
+      </svg>
+      berb@gmail.com</a
+    >
+    <a href="tel:+0221/12 12 23 15" class="link header-contacts__item">
+      <svg>
+        <use xlink:href="/sprites/main-sprite.svg#iconTel"></use>
+      </svg>
+      0221/12 12 23 15</a
+    >
+  </div>
+  <div class="header-container">
+    <Image src={headerImage} alt="bathroom" class="header-img" />
+    <nav class="header-container__top">
+      <a href="/" class="header-logo" title="home page">
+        <svg>
+          <use xlink:href="/sprites/main-sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <menu class="header-container__menu">
+        <li><a href="#" class="link">sanitary</a></li>
+        <li><a href="#" class="link">HEATING</a></li>
+        <li><a href="#" class="link">SOLAR</a></li>
+        <li><a href="#" class="link">TEAM</a></li>
+        <li><a href="#" class="link">references</a></li>
+      </menu>
+      <button type="button" class="button" name="contacts">Contact</button>
+    </nav>
+
+    <div class="header-container__content">
+      <h1>YOUR PLUMBING SPECIALIST IN COLOGNE</h1>
+      <p>we are a certified company & provide best plumbing services for you & your company.</p>
+      <div class="header-container__content-buttons">
+        <button type="button" class="button">Button</button>
+        <a href="#" class="link"
+          >learn more
+          <svg>
+            <use xlink:href="/sprites/main-sprite.svg#arrowLink"></use></svg
+        ></a>
+      </div>
+    </div>
+  </div>
+</header>

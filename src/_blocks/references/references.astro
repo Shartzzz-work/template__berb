@@ -1,0 +1,62 @@
+---
+import { Image } from 'astro:assets';
+
+import refImage1 from './img/references.png';
+import refImage2 from './img/references2.png';
+import refImage3 from './img/references3.png';
+import refImage4 from './img/references4.png';
+---
+
+<section id="references">
+  <div class="references-list">
+    <div class="references-list__container">
+      <h2>References</h2>
+      <Image
+        src={refImage1}
+        alt="bathroom"
+        densities={[1.5, 2]}
+        class="references-list__img"
+      />
+      <Image
+        src={refImage2}
+        alt="bathroom"
+        densities={[1.5, 2]}
+        class="references-list__img"
+      />
+    </div>
+    <div class="references-list__container">
+      <Image
+        src={refImage3}
+        alt="bathroom"
+        densities={[1.5, 2]}
+        class="references-list__img"
+      />
+      <Image
+        src={refImage4}
+        alt="bathroom"
+        densities={[1.5, 2]}
+        class="references-list__img"
+      />
+      <a href="#" class="link"
+        >show me more references
+        <svg>
+          <use xlink:href="/sprites/main-sprite.svg#arrowLink"></use></svg
+        ></a
+      >
+    </div>
+  </div>
+  <div class="references-bottom">
+    <Image
+      src={refImage4}
+      alt="request offer now"
+      densities={[1.5, 2]}
+      class="references-bottom__img"
+    />
+    <h2>How can we help you?</h2>
+    <p>
+      Plumbing, Heating & Solar from Cologne. With us you get services from one
+      from one source. Let us prepare your non-binding offer from us.
+    </p>
+    <button type="button">request offer now</button>
+  </div>
+</section>

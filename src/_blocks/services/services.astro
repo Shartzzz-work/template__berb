@@ -1,0 +1,58 @@
+---
+import { Image } from 'astro:assets';
+
+import servicesImg1 from './img/services.png';
+import servicesImg2 from './img/services2.png';
+import servicesImg3 from './img/services3.png';
+---
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services-list">
+    <div class="services-item">
+      <Image src={servicesImg1} densities={[1.5, 2]} alt="sanitary" class="services-item__img" />
+      <div class="services-item__content">
+        <strong>sanitary</strong>
+        <p>
+          Would you like a new bathroom? Or would you like to carry out a long-overdue
+          modernization? In us you will find a competent and reliable partner.
+        </p>
+        <a href="#" class="link"
+          >learn more
+          <svg>
+            <use xlink:href="/sprites/main-sprite.svg#arrowLink"></use></svg
+        ></a>
+      </div>
+    </div>
+    <div class="services-item">
+      <Image src={servicesImg2} densities={[1.5, 2]} alt="sanitary" class="services-item__img" />
+      <div class="services-item__content">
+        <strong>heating</strong>
+        <p>
+          Would you like a new bathroom? Or would you like to carry out a long-overdue
+          modernization? In us you will find a competent and reliable partner.
+        </p>
+        <a href="#" class="link"
+          >learn more
+          <svg>
+            <use xlink:href="/sprites/main-sprite.svg#arrowLink"></use></svg
+        ></a>
+      </div>
+    </div>
+    <div class="services-item">
+      <Image src={servicesImg1} densities={[1.5, 2]} alt="sanitary" class="services-item__img" />
+      <div class="services-item__content">
+        <strong>solar</strong>
+        <p>
+          Would you like a new bathroom? Or would you like to carry out a long-overdue
+          modernization? In us you will find a competent and reliable partner.
+        </p>
+        <a href="#" class="link"
+          >learn more
+          <svg>
+            <use xlink:href="/sprites/main-sprite.svg#arrowLink"></use></svg
+        ></a>
+      </div>
+    </div>
+  </div>
+</section>

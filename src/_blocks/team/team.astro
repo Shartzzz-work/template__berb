@@ -1,0 +1,32 @@
+---
+import { Image } from 'astro:assets';
+
+import img from './img/man.png';
+---
+
+<section id="team">
+  <h2>Our Team</h2>
+  <div class="team-list">
+    <div class="team-list__item">
+      <h3>Raphael Slater</h3>
+      <span>CEO / MASTER INSTALLER</span>
+      <Image src={img} alt="man" densities={[1.5, 2]} class="team__img">
+    </div>
+    <div class="team-list__item">
+      <h3>Mario Mcclain</h3>
+      <span>MASTER INSTALLER</span>
+    </div>
+    <div class="team-list__item">
+      <h3>Mitchell Wilson</h3>
+      <span>INSTALLER</span>
+    </div>
+    <div class="team-list__item">
+      <h3>Grover Kelley</h3>
+      <span>INSTALLER</span>
+    </div>
+    <div class="team-list__item">
+      <h3>Seth Blair</h3>
+      <span>TRAINEE INSTALLER</span>
+    </div>
+  </div>
+</section>

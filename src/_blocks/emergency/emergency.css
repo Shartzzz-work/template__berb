@@ -1,0 +1,21 @@
+#emergency {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+
+  & h2 {
+    font-size: 4rem;
+  }
+
+  & p {
+    opacity: 80%;
+  }
+
+  & button {
+    background: var(--c-white);
+    color: var(--c-black);
+    margin-top: 20px;
+  }
+}

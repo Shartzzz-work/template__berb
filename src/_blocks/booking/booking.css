@@ -1,0 +1,24 @@
+#booking {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  width: 55vw;
+  padding: clamp(50px, 7vw, 130px);
+  padding-top: 0;
+
+  & button {
+    background: var(--c-white);
+    color: var(--c-black);
+  }
+
+  & p {
+    opacity: 80%;
+  }
+}
+
+.booking-menu {
+  display: flex;
+  font-size: 3em;
+  gap: 10px;
+}
